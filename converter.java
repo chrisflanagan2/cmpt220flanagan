@@ -5,7 +5,6 @@ public class converter {
     public static void main(String[] args) {
         double ounce = 1;
         System.out.println("Enter a value for ounces: ");
-       // double gram
         Scanner reader = new Scanner(System.in);
         ounce = reader.nextDouble();
         double OunceToGram=ounce*28.3495;
