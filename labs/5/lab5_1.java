@@ -14,7 +14,7 @@ public class lab5_1 {
 		
 		Scanner sc = new Scanner(System.in);
 		for (int i=0; i<10; i++)
-			array[i] = Integer.parseInt(sc.nextLine());
+			array[i] = sc.nextDouble();
 		System.out.println ("Maximum element in the array is: " + max(array));
 
 	}

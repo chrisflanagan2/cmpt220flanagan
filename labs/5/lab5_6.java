@@ -5,7 +5,7 @@ public class lab5_6 {
 	int i;
 	Double sum=0.0;
 	for(i=0;i<array[0].length;i++) {
-		sum+=array[i][0];
+		sum+=array[i][column]; // JA
 		}
 	return (double)sum/array[0].length;
 	}
