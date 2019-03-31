@@ -32,7 +32,8 @@ public class Bond {
 							
 		public double getPrice() {
 			double price = 0;
-			price= coupon * ( (1 - Math.pow((1 + interest),-payments) / interest )) + valueMaturity * Math.pow((1 + interest),-payments);
+			// JA: Fixed problems in the calculation
+			price= coupon * (1 - 1/Math.pow((1 + interest),payments)) + valueMaturity * 1/Math.pow((1 + interest),payments);
 			return price;
 		}	
 }

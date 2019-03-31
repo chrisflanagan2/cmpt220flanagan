@@ -1,6 +1,7 @@
 package lab6;
 import java.util.Date;
 
+// JA: No main method to test this class?
 public class SoccerMatch {
 	private Date startTime;
 	private Date endTime;
