@@ -1,5 +1,6 @@
 package lab7;
 
+// JA: No test?
 public class MyLong {
 
 private long value;

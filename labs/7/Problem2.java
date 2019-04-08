@@ -7,14 +7,17 @@ public class Problem2 {
 		
 		StackOfIntegers stack = new StackOfIntegers();
 		int num = 0;
+		// JA: You need to read the numbers
+		num = input.nextInt();
 		findFactors(num ,stack);
-		for (int i=0; i<stack.getSize(); i++) {
+		int size = stack.getSize();
+		for (int i=0; i<size; i++) {
 			System.out.print(stack.pop() + " ");
 		}
 		
 	}
 	public static void findFactors(int num, StackOfIntegers stack) {
-		for (int k=2; k<num; k++) {
+		for (int k=2; k<=num; k++) {
 			while (num %k==0) {
 				stack.push(k);
 				num=num/k;
