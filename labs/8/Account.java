@@ -1,0 +1,72 @@
+package lab11;
+import java.util.Date;
+
+public class Account {
+	private int id;
+	protected double balance;
+	private double annualInterestRate;
+	private Date dateCreated = new Date();
+	
+	Account() {}
+	
+	Account(int id, double bal) {
+		this.id = id;
+		this.balance = bal;
+	}
+	
+	// getters...
+	int getId() {
+		return id;
+	}
+	
+	double getBalance() {
+		return balance;
+	}
+	
+	double getAIR() {
+		return annualInterestRate;
+	}
+	
+	String getDateCreated() {
+		return dateCreated.toString();
+	}
+	
+	// setters...
+	void setId(int id) {
+		this.id = id;
+	}
+	
+	void setBalance(double bal) {
+		this.balance = bal;
+	}
+	
+	void setAIR(double AIR) {
+		this.annualInterestRate = AIR;
+	}
+	
+	// methods...
+	double getMonthlyInterestRate() {
+		return annualInterestRate / 100 / 12;
+	}
+	
+	double getMonthlyInterest() {
+		return balance * getMonthlyInterestRate();
+	}
+	
+	boolean withdraw(double amount) {
+		balance -= amount;
+		return false;
+	}
+	
+	void deposit(double amount) {
+		balance += amount;
+	}
+	
+	
+	public String toString() {
+		return "Type: Generic account;  ID: " + this.id 
+				+ ";  balance: " + this.balance;
+	}
+	
+}
+
