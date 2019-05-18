@@ -9,7 +9,7 @@ public class Manager1 {
 		this.id = id;
 	}
 		 
-	
+	@Override
 	public void print(){
 	System.out.println("the manager name is " + name + "and the ID is " + id);
 			

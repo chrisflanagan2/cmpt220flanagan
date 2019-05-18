@@ -1,6 +1,6 @@
 package lab10;
 
-public class Appliance implements Comparable{
+public class Appliance implements Comparable<Appliance>{
 	   
 	   private double voltage;
 	   private String colour;
@@ -40,7 +40,7 @@ public class Appliance implements Comparable{
 	       this.price = price;
 	   }
 	   @Override
-	   public int compareTo(Object arg0) {
+	   public int compareTo(Appliance arg0) {
 	       
 	       if(arg0 !=null) {
 	           if(arg0 instanceof Appliance) {

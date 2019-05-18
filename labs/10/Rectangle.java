@@ -1,5 +1,7 @@
 package lab10;
 
+
+// JA: Where is the Printable interface?
 public class Rectangle implements Printable {
 	private double width;
 	private double length;
